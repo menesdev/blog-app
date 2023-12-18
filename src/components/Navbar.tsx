@@ -1,9 +1,12 @@
 import "../style/navbar.css"
+import SearchVektor from "../assets/SearchVector.png"
 
 const Navbar = () => {
   return (
     <nav>
-      <p className="navbar-logo">HotCoffee</p>
+      <span className="navbar-logo">DevBlog</span>
+      <img src={SearchVektor} className="search-vektor" />
+      <input type="text" className="search-input" placeholder="Search..." />
     </nav>
   )
 }
